@@ -1,5 +1,5 @@
-* {margin:0;padding:0;border:0;}
-body {font:2em/1.1 Tahoma, Geneva, sans-serif; background:url(images/stripe.png) repeat-x;}
-.clear {clear:both;}
-img, a img {border:0;}
-input {outline:0;}
+*{margin:0;padding:0;border:0;}
+.clear{clear:both;}
+body{font:2em/1.1 Tahoma, Geneva, sans-serif;background:#fff;}
+#container{width:100%;margin:0 auto;position:relative;}
+hr{height:1px;background:#bbb;clear:both;margin:20px 0;display:block;}
