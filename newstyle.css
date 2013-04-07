@@ -2,30 +2,75 @@
 	RESET
 */
 *{
+	border:0;
 	margin:0;
 	padding:0;
-	border:0;
 }
 .clear{
 	clear:both;	/*disallows floating elements on both left and right sides of an element*/
 }
+
+
 /*
     STRUCTURE
 */
 body{
-	font:2em/1.1 Tahoma, Geneva, sans-serif; /* font-style font-variant font-weight font-size/line-height font-family*/
 	background:#fff;/*white*/
+	font:100%/1.1 Tahoma, Geneva, sans-serif; /* font-style font-variant font-weight font-size/line-height font-family*/
 }
 #container{
-	width:100%;
 	margin:0 auto;/*top/bottom have no margin, left and right auto centers.*/
 	position:relative;
+	width:100%;
 }
 /*Style of our horizontal row breaks.*/
 hr{
-	height:1px;
 	background:#bbb;
 	clear:both;
-	margin:20px 0;/*top/bottom are 20px, left/right are 0*/
 	display:block;
+	height:2px;
+	margin:20px 0;/*top/bottom are 20px, left/right are 0*/
+}
+
+
+/*
+    TYPOGRAPHY
+*/
+a{
+	text-decoration:0;
+	color:#333;
+	font-size:1.8em;
+}
+h1{
+	font-size:4em;
+	padding-top:20px;
+	margin:0 0 20px 0;
+}
+h2{
+	font-size:2em;
+	margin:10px 0 10px 0;
+}
+p{
+	font-size:1.5em;
+}
+/*not finished yet*/
+.bigButton{
+	background:url(/images/button-bg.png) repeat-x;
+	-moz-border-radius: 5px;
+	padding:6px 12px;
+	border:none;
+	color:white;
+	cursor:pointer;
+	text-shadow:0 1px 1px #666;
+	-webkit-border-radius:5px;
+	-webkit-box-shadow:0 1px 3px #999;
+	-moz-box-shadow:0 1px 3px #999;
+	font:bold 16px Helvetica;
+}
+.bigButton:hover{
+	background-position:bottom left;
+}
+.red{
+	background:red;
+	color:white;
 }

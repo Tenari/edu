@@ -1,5 +1,9 @@
 *{margin:0;padding:0;border:0;}
 .clear{clear:both;}
-body{font:2em/1.1 Tahoma, Geneva, sans-serif;background:#fff;}
+body{font:100%/1.1 Tahoma, Geneva, sans-serif;background:#fff;}
 #container{width:100%;margin:0 auto;position:relative;}
 hr{height:1px;background:#bbb;clear:both;margin:20px 0;display:block;}
+a{text-decoration:0;color:#333;font-size:1.8em;}
+h1{font-size:4em;padding-top:20px;margin:0 0 20px 0;}
+h2{font-size:2em;margin:10px 0 10px 0;}
+p{font-size:1.5em;}
