@@ -37,7 +37,7 @@ hr{
     TYPOGRAPHY
 */
 a{
-	text-decoration:0;
+	text-decoration:none;
 	color:#333;
 	font-size:1.8em;
 }
@@ -53,22 +53,27 @@ h2{
 p{
 	font-size:1.5em;
 }
-/*not finished yet*/
 .bigButton{
-	background:url(/images/button-bg.png) repeat-x;
-	-moz-border-radius: 5px;
-	padding:6px 12px;
-	border:none;
-	color:white;
-	cursor:pointer;
-	text-shadow:0 1px 1px #666;
-	-webkit-border-radius:5px;
-	-webkit-box-shadow:0 1px 3px #999;
+	background:#ccd;
+	border:4px solid #cbd;
+	
+	border-radius:15px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	
+	box-shadow:0 1px 3px #999;
 	-moz-box-shadow:0 1px 3px #999;
-	font:bold 16px Helvetica;
+	-webkit-box-shadow:0 1px 3px #999;
+	
+	color:#556;
+	cursor:pointer;
+	font:bold;
+	
+	padding:27px 100px;
+	text-shadow:0 1px 1px #666;
 }
 .bigButton:hover{
-	background-position:bottom left;
+	border:4px solid #a9a;
 }
 .red{
 	background:red;
