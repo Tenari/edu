@@ -14,10 +14,10 @@ include "common/header.php";
           <!-- Content here -->
 
    <!-- IF LOGGED OUT -->
-	
-	<a href="new.php" title="Make an Account" class="bigButton">I'm New</a>
-	<a href="login.php" title="Login" class="bigButton">I'm Not</a>
-	
+	<div class="bigButtonSpace">
+		<a href="new.php" title="Make an Account" class="bigButton">I'm New</a>
+		<a href="login.php" title="Login" class="bigButton">I'm Not</a>
+	</div>
 	<p>Now teaching lesson #[NUMBER].</p>
 
 </div>

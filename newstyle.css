@@ -75,6 +75,10 @@ p{
 .bigButton:hover{
 	border:4px solid #a9a;
 }
+/*the class of the div around a set of bigbuttons to space the text around them reasonably.*/
+.bigButtonSpace{
+	margin:31px 0;
+}
 .red{
 	background:red;
 	color:white;

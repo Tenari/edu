@@ -9,4 +9,5 @@ h2{font-size:2em;margin:10px 0 10px 0;}
 p{font-size:1.5em;}
 .bigButton{background:#ccd;border:4px solid #cbd;border-radius:15px;-moz-border-radius:15px;-webkit-border-radius:15px;box-shadow:0 1px 3px #999;-moz-box-shadow:0 1px 3px #999;-webkit-box-shadow:0 1px 3px #999;color:#556;cursor:pointer;font:bold;padding:27px 100px;text-shadow:0 1px 1px #666;}
 .bigButton:hover{border:4px solid #a9a;}
+.bigButtonSpace{margin:31px 0;}
 .red{background:red;color:white;}
