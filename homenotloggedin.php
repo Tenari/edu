@@ -15,8 +15,8 @@ include "common/header.php";
 
    <!-- IF LOGGED OUT -->
 	<div class="bigButtonSpace">
-		<a href="new.php" title="Make an Account" class="button big buttonColors">I'm New</a>
-		<a href="login.php" title="Login" class="button big buttonColors">I'm Not</a>
+		<a href="new.php" title="Make an Account" class="button big buttonColors">Join</a>
+		<a href="login.php" title="Login" class="button big buttonColors">Login</a>
 	</div>
 	<p>Now teaching lesson #[NUMBER].</p>
 
