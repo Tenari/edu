@@ -1,4 +1,4 @@
-		<div id="footer">
+		<div id="footer" class="clear">
 		
 			<a href="contact.php" style="padding-right:15px">Contact</a>
 			<a href="legal.php" style="padding-right:15px">Legal</a>

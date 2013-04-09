@@ -18,9 +18,9 @@ include "common/header.php";
         		
 		<div class="buttonSet">
 			
-			<button type="button">Step Back</button>
-			<button type="button">Replay</button>
-			<button type="button">Step Forward</button>
+			<button type="button" class="button left buttonColors">Step Back</button>
+			<button type="button" class="button middle buttonColors">Replay</button>
+			<button type="button" class="button right buttonColors">Step Forward</button>
 			
 		</div>
 
