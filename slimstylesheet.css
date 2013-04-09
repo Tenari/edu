@@ -11,12 +11,4 @@ p{font-size:1.5em;}
 .bigButton:hover{border:4px solid #a9a;}
 .bigButtonSpace{margin:31px 0;}
 .red{background:red;color:white;}
-.whiteboardContainer{
-	background:url(images/whiteboard.png) no-repeat;
-	background-size:100% 100%;
-	-webkit-background-size:100% 100%;
-	-moz-background-size:100% 100%;
-	height:75%;
-	width:60%;
-	
-}
+.whiteboardContainer{background:url(images/whiteboard.png) no-repeat;background-size:100% 100%;-webkit-background-size:100% 100%;-moz-background-size:100% 100%;height:75%;width:60%;}
