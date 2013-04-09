@@ -2,7 +2,7 @@
 include "common/header.php"; 
 ?>
 
-<div class="main">
+
 
    <noscript>This site just doesn't work, period, without JavaScript</noscript>
    
@@ -11,8 +11,11 @@ include "common/header.php";
 
    <!-- IF LOGGED IN -->
 
-        <p>Whiteboard box goes here.</p>
-		
+		<div class="whiteboardContainer">
+			
+			<p>Learning happens here.</p>
+		</div>
+        		
 		<div class="buttonSet">
 			
 			<button type="button">Step Back</button>
@@ -25,7 +28,7 @@ include "common/header.php";
 	
 		<!-- NO ACCESS-->
 
-</div>
+
 
 <?php 
 include_once "common/sidebar.php"; 

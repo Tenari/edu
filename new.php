@@ -3,7 +3,7 @@ include "common/header.php";
 ?>
 
 <div class="main">
-	<h1 style="margin-bottom:90px;">New Account</h1>		
+	<h1>New Account</h1>		
 	<form>
 		<table border="0">
 			<tr>
