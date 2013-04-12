@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" id="ZapClass">
-<head>
+<head profile="">
+<link rel="icon" 
+      type="image/png" 
+      href="images/favicon.png">
 	<title>ZapClass</title>
 	<link rel="stylesheet" type="text/css" href="newstyle.css">
 	
