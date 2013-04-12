@@ -174,9 +174,16 @@ p{
 }
 #whiteboardContainer p{
 	position:relative;
-	top:44%;
+	font-size:4em;
+	top:40%;
 	margin-left:auto;
 	margin-right:auto;
+}
+#whiteboardContainer input{
+	border:5px solid #000;
+	outline:0;
+	font-size:1.2em;
+	width:8%;
 }
 
 
