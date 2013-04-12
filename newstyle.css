@@ -162,7 +162,7 @@ p{
 /*
 	WHITEBOARD/lESSONS STUFF
 */
-.whiteboardContainer{
+#whiteboardContainer{
 	position:relative;
 	left:20%;
 	background:url(images/whiteboard.png) no-repeat;
@@ -172,7 +172,7 @@ p{
 	height:65%;
 	width:60%;
 }
-.whiteboardContainer p{
+#whiteboardContainer p{
 	position:relative;
 	top:44%;
 	margin-left:auto;

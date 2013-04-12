@@ -11,7 +11,7 @@ include "common/header.php";
 
    <!-- IF LOGGED IN -->
 
-		<div class="whiteboardContainer">
+		<div id="whiteboardContainer">
 			
 			<p>Learning happens here.</p>
 		</div>
@@ -23,6 +23,11 @@ include "common/header.php";
 			<button type="button" class="button right buttonColors">Step Forward</button>
 			
 		</div>
+		
+		<script type="text/javascript" src="js/lessons.js"></script>
+		<script type="text/javascript">
+			initialize();
+		</script>
 
    <!-- IF LOGGED OUT -->
 	
