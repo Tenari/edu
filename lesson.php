@@ -12,8 +12,12 @@ include "common/header.php";
    <!-- IF LOGGED IN -->
 
 		<div id="whiteboardContainer">
-			<p id= "whiteboardContent">Learning happens here.</p>
+			<p id="whiteboardContent">Learning happens here.</p>
 		</div>
+		
+		<div id="lessonVoice">
+		</div>
+		
         		
 		<div class="buttonSet">
 			
@@ -28,7 +32,7 @@ include "common/header.php";
 		<script>
 			initialize();
 		</script>
-
+		
    <!-- IF LOGGED OUT -->
 	
 		<!-- NO ACCESS-->

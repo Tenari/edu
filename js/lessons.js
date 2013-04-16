@@ -1,7 +1,13 @@
 var step;
+var board;
+var currentLesson;
 
 function initialize() {
 	step = 0;
+	board= 0;
+	currentLesson = new algebraLesson1();
+	
+	doBoard();
 	doStep(step);
 }
 function getCurrentStep() {
@@ -15,10 +21,67 @@ function stepBackward() {
 	step = step - 1;
 	doStep(step);
 }
+function getCurrentBoard() {
+	return board;
+}
+function nextBoard() {
+	board = board + 1;
+	step = 0;
+	doBoard(board);
+}
+function previousBoard() {
+	board = board - 1;
+	step = 0;
+	doBoard(board);
+}
+
+
+function doBoard() {
+	switch(board){
+		case 0:
+			currentLesson.board0();
+			break;
+		/*case 1:
+			currentLesson.board1();
+			break;
+		case 2:
+			currentLesson.board2();
+			break;
+		case 3:
+			currentLesson.board3();
+			break;
+		case 4:
+			currentLesson.board4();
+			break;
+		case 5:
+			currentLesson.board5();
+			break;
+		case 6:
+			currentLesson.board6();
+			break;
+		case 7:
+			currentLesson.board7();
+			break;
+		case 8:
+			currentLesson.board8();
+			break;
+		case 9:
+			currentLesson.board9();
+			break;
+		case 10:
+			currentLesson.board10();
+			break;
+		case 11:
+			currentLesson.board11();
+			break;*/
+		default:
+			break;
+	}
+}
+
 function doStep(stepNumber) {
 	switch(stepNumber){
 		case 0:
-			//stuff
 			document.getElementById("whiteboardContent").innerHTML = "1 + 1 =";
 			break;
 		case 1:
@@ -79,5 +142,14 @@ function doStep(stepNumber) {
 			break;
 		default:
 			//stuff
+	}
+}
+
+
+function algebraLesson1(){
+	this.board0=board0;
+	function board0(){
+		document.getElementById("lessonVoice").innerHTML="<audio id='lessonVoice' autoplay height='0' width='0' src='sounds/A_L1_LINE1.mp3'></audio>";
+		//<source src='sounds/A_L1_LINE1.mp3' type='audio/mpeg' /> <source src='sounds/A_L1_LINE1.wav' type='audio/wav' /> <embed height='50' width='100' src='sounds/A_L1_LINE1.mp3' />
 	}
 }
