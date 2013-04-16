@@ -3,12 +3,11 @@ var board;
 var currentLesson;
 
 function initialize() {
-	step = 0;
+	step = 1;
 	board= 0;
 	currentLesson = new algebraLesson1();
 	
 	doBoard();
-	doStep(step);
 }
 function getCurrentStep() {
 	return step;
@@ -88,12 +87,13 @@ function doStep(stepNumber) {
 			$("#whiteboardContent").append("<input id='answer' type='number' />");
 			break;
 		case 2:
-			if(document.getElementById("answer").value != 2){
+			answerElement = document.getElementById("answer");
+			if (answerElement != null && answerElement.value == 2){
+				writeBoard("correct!");
+			}
+			else{
 				step = 0;
 				doStep(step);
-			}
-			else {
-				document.getElementById("whiteboardContent").innerHTML = "correct!";
 			}
 			break;
 		case 3:
@@ -149,7 +149,26 @@ function doStep(stepNumber) {
 function algebraLesson1(){
 	this.board0=board0;
 	function board0(){
-		document.getElementById("lessonVoice").innerHTML="<audio id='lessonVoice' autoplay height='0' width='0' src='sounds/A_L1_LINE1.mp3'></audio>";
-		//<source src='sounds/A_L1_LINE1.mp3' type='audio/mpeg' /> <source src='sounds/A_L1_LINE1.wav' type='audio/wav' /> <embed height='50' width='100' src='sounds/A_L1_LINE1.mp3' />
+		document.getElementById("lessonVoice").innerHTML="<audio id='lessonVoice' autoplay height='0' width='0'> <source src='sounds/A_L1_LINE1.mp3' type='audio/mpeg' /> <source src='sounds/A_L1_LINE1.wav' type='audio/wav' /> <embed height='50' width='100' src='sounds/A_L1_LINE1.mp3' /> </audio>";
+		setTimeout(function(){writeBoard("1")}, 2200);
+		setTimeout(function(){addStringToBoard(" + ")}, 2450);
+		setTimeout(function(){addStringToBoard("1 ")}, 2700);
+		setTimeout(function(){addStringToBoard("= ")}, 2950);
+		setTimeout(function(){addNumberInputToBoard()}, 3200);
+		$(document).keypress(function(event){
+			if(event.which == 13){
+				stepForward();
+			}
+		})
 	}
+}
+
+function writeBoard(stringToWrite){
+	document.getElementById("whiteboardContent").innerHTML = stringToWrite;
+}
+function addStringToBoard(stringToAdd){
+	document.getElementById("whiteboardContent").innerHTML = document.getElementById("whiteboardContent").innerHTML + stringToAdd;
+}
+function addNumberInputToBoard(){
+	$("#whiteboardContent").append("<input id='answer' type='number'' />");
 }
